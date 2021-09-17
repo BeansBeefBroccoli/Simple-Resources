@@ -1,10 +1,11 @@
-name: Crush images
+name: Crush Images
 on:
-  push
-    - '**.jpg'
-    - '**.jpeg'
-    - '**.png'
-    - '**.gif'
+  push:
+    paths:
+      - '**.jpg'
+      - '**.jpeg'
+      - '**.png'
+      - '**.gif'
   pull_request
     paths:
       - '**.jpg'
