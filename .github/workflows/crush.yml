@@ -6,7 +6,7 @@ on:
       - '**.jpeg'
       - '**.png'
       - '**.gif'
-  pull_request
+  pull_request:
     paths:
       - '**.jpg'
       - '**.jpeg'
