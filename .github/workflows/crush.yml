@@ -1,0 +1,24 @@
+name: Crush images
+on:
+  push
+    - '**.jpg'
+    - '**.jpeg'
+    - '**.png'
+    - '**.gif'
+  pull_request
+    paths:
+      - '**.jpg'
+      - '**.jpeg'
+      - '**.png'
+      - '**.gif'
+jobs:
+  crush:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Crush Images
+        uses: crush-pics/crush-pics-github-action@v1.0
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          api-key: ${{ secrets.CRUSH_API_KEY }}
