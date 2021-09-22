@@ -4,7 +4,6 @@ labels: [bug]
 assignees:
   - BeansBeefBroccoli
 body:
-
 - type: markdown
   attributes:
     value: |
@@ -13,11 +12,10 @@ body:
       - Your issue has not been reported before (make sure to use the [search function](https://github.com/BeansBeefBroccoli/Simple-Resource/issues)!)
 
       **Do not forget to give your issue a descriptive title.** "there's a bug" isn't useful, and it makes it harder to distinguish issues at a glance.
-
 - type: dropdown
   attributes:
     label: "Operating System"
-    description: "Select the operating system(s) that this bug has occured on."
+    description: "Select the operating system(s) that this bug has occurred on."
     multiple: true
     options:
     - "Windows"
@@ -26,37 +24,32 @@ body:
     - "Other"
   validations:
     required: true
-
 - type: input
   attributes:
     label: "Minecraft Version"
     placeholder: "Type Here"
   validations:
     required: true
-
 - type: dropdown
   attributes:
     label: Mod Loader
-    description: "Select the mod loader(s) that this bug has occured on."
+    description: "Select the mod loader(s) that this bug has occurred on."
     multiple: true
     options:
     - "Fabric"
     - "Forge"
-
 - type: input
   attributes:
     label: "Mod Loader Version"
     placeholder: "Type Here"
   validations:
     required: true
-
 - type: input
   attributes:
     label: "Simple Resources Version"
     placeholder: "Type Here"
   validations:
     required: true
-
 - type: textarea
   attributes:
     label: "Description"
@@ -64,7 +57,6 @@ body:
     placeholder: "Type Here"
   validations:
     required: true
-
 - type: textarea
   attributes:
     label: "Steps to Reproduce"
@@ -72,23 +64,20 @@ body:
     placeholder: "Type Here"
   validations:
     required: true
-
 - type: textarea
   attributes:
     label: "Other Mod(s) Involved"
-    description: "Do you require another mod/other mods to reproduce this crash? If you do, list the it/them here."
+    description: "Do you require another mod/other mods to reproduce this crash? If you do, list it/them here."
     placeholder: "Type Here"
   validations:
     required: true
-
 - type: textarea
   attributes:
     label: "Suspected Cause"
     description: "If you know what could be causing this bug, describe it here."
     placeholder: "Type Here"
   validations:
-    required: false  
-
+    required: false
 - type: checkboxes
   attributes:
     label: "Confirm the Following"
