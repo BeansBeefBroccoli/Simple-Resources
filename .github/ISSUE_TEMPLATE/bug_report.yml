@@ -37,7 +37,7 @@ body:
 - type: dropdown
   attributes:
     label: Mod Loader
-    descripstion: "Select the mod loader(s) that this bug has occured on."
+    description: "Select the mod loader(s) that this bug has occured on."
     multiple: true
     options:
     - "Fabric"
